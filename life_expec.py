@@ -5,9 +5,9 @@ import pandas as pd
 import sklearn
 
 # Load the saved model and scaler
-# with open(r"/Users/mac/Desktop/ipynb files/Life_expectancy_ridge_model.pkl", "rb") as model_file:
-#     model = pickle.load(model_file)
-pipeline = pickle.load('besr_rf_pipeline.pkl')
+with open(r"besr_rf_pipeline.pkl", "rb") as model_file:
+    pipeline = pickle.load(model_file)
+# pipeline = pickle.load('besr_rf_pipeline.pkl')
 
 cities= ['Shoreline', 'Seattle', 'Kent', 'Bellevue', 'Redmond',
        'Maple Valley', 'North Bend', 'Lake Forest Park', 'Sammamish',
