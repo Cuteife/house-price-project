@@ -62,3 +62,4 @@ input_data = pd.DataFrame(input_data)
 if st.button("Predict House Price"):
     prediction = pipeline.predict(input_data)
     st.success(f"Predicted House price: ${prediction[0]:.2f}")
+    #okS
